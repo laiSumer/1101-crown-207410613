@@ -3,7 +3,7 @@ const serviceCrown2Controller_13 = require('./serviceCrown2Controller_13');
 exports.getCatagories = async (req,res) => {
     try{
         let results = await serviceCrown2Controller_13.getCategories();
-        console.log('resilts',JSON.stringify(require));
+        console.log('results',JSON.stringify(results));
         res.render('crown2_13', { 
             data: results,
             title: 'Corwn2_13',
